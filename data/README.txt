@@ -151,3 +151,5 @@ Cross-Validation
 ----------------
 
 Prior versions of the MovieLens dataset included either pre-computed cross-folds or scripts to perform this computation. We no longer bundle either of these features with the dataset, since most modern toolkits provide this as a built-in feature. If you wish to learn about standard approaches to cross-fold computation in the context of recommender systems evaluation, see [LensKit](http://lenskit.org) for tools, documentation, and open-source code examples.
+
+Token authentication login: http://127.0.0.1:8888/lab?token=5fae4b41dbbe394b2c6cc9d6530a3366812a5d466dcbd4c4

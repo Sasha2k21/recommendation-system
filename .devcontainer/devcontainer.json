@@ -1,0 +1,18 @@
+{
+  "name": "Spark DevContainer",
+  "image": "jupyter/pyspark-notebook:latest",
+  "workspaceFolder": "/home/jovyan/workspace",
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "/opt/conda/bin/python"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/notebooks,target=/home/jovyan/workspace,type=bind",
+    "source=${localWorkspaceFolder}/data,target=/home/jovyan/data,type=bind"
+  ],
+  "forwardPorts": [8888, 4040],
+  "postStartCommand": "start-notebook.sh --NotebookApp.token=''"
+}
